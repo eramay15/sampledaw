@@ -16,7 +16,7 @@ type Post = {
 export default function BlogPage() {
   const [posts, setPosts] = useState<Post[]>([]); // Fix: Initialized as empty array to avoid hydration errors
 
-  useEffect(() => {
+  useEffect(() => {``
     // Simulating API fetch delay
     setTimeout(() => {
       setPosts([
